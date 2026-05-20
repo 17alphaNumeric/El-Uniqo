@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>El Unico y Verdadero Amor de Mi Vida❤️</title>
+
+<style>
+body{
+margin:0;
+min-height:100vh;
+font-family:Georgia,serif;
+color:white;
+text-align:center;
+background:radial-gradient(circle at top left,#ff8fa3,transparent 30%),
+radial-gradient(circle at bottom right,#7a0000,transparent 35%),
+linear-gradient(135deg,#240000,#8b0000,#d90429);
+overflow-x:hidden;
+}
+
+.card{
+width:90%;
+max-width:950px;
+margin:50px auto;
+padding:45px;
+border-radius:35px;
+background:rgba(255,255,255,.13);
+backdrop-filter:blur(18px);
+box-shadow:0 25px 80px rgba(0,0,0,.45);
+}
+
+h1{
+font-size:52px;
+text-shadow:0 5px 20px rgba(0,0,0,.45);
+}
+
+.badge{
+display:inline-block;
+background:white;
+color:#b00020;
+padding:10px 22px;
+border-radius:30px;
+font-weight:bold;
+}
+
+.ring{
+width:130px;
+height:130px;
+border:6px solid white;
+border-radius:50%;
+margin:25px auto;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:55px;
+box-shadow:0 0 40px white;
+animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+50%{transform:scale(1.08);}
+}
+
+button{
+border:none;
+margin:10px;
+padding:15px 25px;
+border-radius:50px;
+background:white;
+color:#b00020;
+font-weight:bold;
+font-size:17px;
+cursor:pointer;
+}
+
+button:hover{
+background:#ffd6dc;
+transform:scale(1.05);
+}
+
+.message-box{
+margin-top:35px;
+padding:35px;
+border-radius:25px;
+background:rgba(255,255,255,.17);
+font-size:24px;
+line-height:1.8;
+min-height:250px;
+}
+
+.heart{
+position:fixed;
+bottom:-50px;
+font-size:30px;
+animation:floatUp 9s linear infinite;
+}
+
+@keyframes floatUp{
+100%{transform:translateY(-120vh) rotate(360deg);opacity:0;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart" style="left:8%;">❤️</div>
+<div class="heart" style="left:25%;animation-delay:2s;">🌹</div>
+<div class="heart" style="left:45%;animation-delay:1s;">💕</div>
+<div class="heart" style="left:70%;animation-delay:3s;">💋</div>
+<div class="heart" style="left:90%;animation-delay:1.5s;">✨</div>
+
+<div class="card">
+
+<div class="badge">Te Amo </div>
+
+<div class="ring">❤️</div>
+
+<h1>El Unico y Verdadero Amor De Mi Vida</h1>
+
+<h2>❤️ 🌹</h2>
+
+<p style="font-size:24px;line-height:1.8;">
+Tú no llegaste solamente a mi vida.<br>
+Tú te convertiste en mi mundo, mi calma, mi hogar y mi razón favorita para seguir adelante.
+</p>
+
+<button onclick="showMessage('light')">✨ Cómo iluminaste mi vida</button>
+<button onclick="showMessage('promise')">💌 Mis promesas</button>
+<button onclick="showMessage('cute')">😂 La verdad</button>
+<button onclick="showMessage('forever')">💍 Para siempre</button>
+
+<div id="message" class="message-box">
+Mi amor, antes de ti mi vida se sentía vacía.<br><br>
+Después de ti, todo empezó a tener color, calor y sentido.<br><br>
+Ahora cada parte de mí te pertenece porque tú eres mi mundo entero.
+</div>
+
+<p style="font-size:20px;">Siempre tuyo, con todo mi amor ❤️</p>
+
+</div>
+
+<script>
+function showMessage(type){
+
+let box = document.getElementById("message");
+
+let messages = {
+
+light: `
+Mi amor, tú iluminaste mi vida como un sol. ☀️<br><br>
+Antes de ti, yo solamente existía. Contigo aprendí lo que significa amar de verdad, sentir de verdad y vivir de verdad.<br><br>
+Tu sonrisa calma mi alma. Tu voz me hace sentir en casa. Y tus ojos se convirtieron en mi lugar favorito en el universo.
+`,
+
+promise: `
+Te prometo cuidar tu corazón como lo más sagrado que tengo. ❤️<br><br>
+Prometo abrazarte cuando el mundo se vuelva pesado. Prometo escucharte incluso cuando no encuentres palabras.<br><br>
+Prometo proteger tu paz, tu sonrisa y tus sueños. Y aunque pasen los años, nunca voy a dejar de enamorarme de ti.
+`,
+
+cute: `
+Honestamente creo que debería existir una ley contra ser tan hermosa. 🚨<br><br>
+Una sonrisa tuya y mi cerebro deja de funcionar. Me miras dos segundos y ya me tienes completamente perdido.<br><br>
+Eres demasiado perfecta para mí, y aun así tengo la suerte de llamarte mi esposa.
+`,
+
+forever: `
+Quiero una vida contigo llena de abrazos largos, besos lentos, risas de madrugada y amor infinito. 💍<br><br>
+Quiero despertar a tu lado cuando tengamos 80 años y seguir mirándote exactamente igual que ahora: completamente enamorado.<br><br>
+Tú y yo. Hasta el último latido de mi corazón.
+`
+};
+
+box.innerHTML = messages[type];
+}
+</script>
+
+</body>
+</html>
